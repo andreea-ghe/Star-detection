@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 16
+names: ['aquila', 'bootes', 'canis_major', 'canis_minor', 'cassiopeia', 'cygnus', 'gemini', 'leo', 'lyra', 'moon', 'orion', 'pleiades', 'sagittarius', 'scorpius', 'taurus', 'ursa_major']
+
+roboflow:
+  workspace: astro-tc3uc
+  project: constellation-detection
+  version: 1
+  license: Public Domain
+  url: https://universe.roboflow.com/astro-tc3uc/constellation-detection/dataset/1
