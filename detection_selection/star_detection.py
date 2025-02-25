@@ -48,8 +48,8 @@ class StarDetection:
         _, binary = cv2.threshold(tophat, 30, 255, cv2.THRESH_BINARY)
         binary = binary.astype(np.uint8)
 
-        cv2.imshow("binary", binary)
-        cv2.waitKey(0)
+        # cv2.imshow("binary", binary)
+        # cv2.waitKey(0)
         return image, binary
     
 

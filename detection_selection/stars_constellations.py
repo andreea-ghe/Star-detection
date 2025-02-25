@@ -154,12 +154,12 @@ def map_stars_to_constellations(img, detected_constellations, all_stars):
 
 
 if __name__ == "__main__":
-    image_to_solve = "C:/Users/Andreea/Documents/constellation/dataset/test/images/2022-01-02-00-00-00-s_png_jpg.rf.da902dcc3763024472a80ca077612fcc.jpg"
-    # image_to_solve = "C:/Users/Andreea/Documents/constellation/dataset/test/images/2022-01-09-00-00-00-s_png_jpg.rf.1b4788ef2a761e6133a58192102c6160.jpg"
-    # image_to_solve = "C:/Users/Andreea/Documents/constellation/dataset/test/images/2022-01-11-00-00-00-s_png_jpg.rf.3b967c1738b7800202be12fc4fc19203.jpg"
-    image_to_solve = "C:/Users/Andreea/Documents/constellation/dataset/test/images/2022-02-03-00-00-00-n_png_jpg.rf.249728aa17c0b712f336066d9595343b.jpg"
-    # image_to_solve = "C:/Users/Andreea/Documents/constellation/2022-01-11-00-00-00-s_png_jpg.rf.3b967c1738b7800202be12fc4fc19203.jpg"
+    image_to_solve = "C:/Users/Andreea/Documents/constellation/Star-detection/dataset/test/images/2022-01-02-00-00-00-s_png_jpg.rf.da902dcc3763024472a80ca077612fcc.jpg"
+    image_to_solve = "C:/Users/Andreea/Documents/constellation/Star-detection/dataset/test/images/2022-01-09-00-00-00-s_png_jpg.rf.1b4788ef2a761e6133a58192102c6160.jpg"
+    image_to_solve = "C:/Users/Andreea/Documents/constellation/Star-detection/dataset/test/images/2022-01-11-00-00-00-s_png_jpg.rf.3b967c1738b7800202be12fc4fc19203.jpg"
+    image_to_solve = "C:/Users/Andreea/Documents/constellation/Star-detection/dataset/test/images/2022-02-03-00-00-00-n_png_jpg.rf.249728aa17c0b712f336066d9595343b.jpg"
+    image_to_solve = "C:/Users/Andreea/Documents/constellation/Star-detection/dataset/test/images/2022-01-11-00-00-00-s_png_jpg.rf.3b967c1738b7800202be12fc4fc19203.jpg"
     detect = StarDetection(image_to_solve)
-    stars = detect.blob_detection2()
+    stars = detect.blob_detection1()
     constellations = detection(image_to_solve)
     map_stars_to_constellations(image_to_solve, constellations, stars)
